@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Luthando Madlingozi</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;1,300;1,500&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/98ff9511d0.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="hero">
+        <nav>
+            <h2 class="logo">Portfo<span>lio</span></h2>
+            <ul>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">ABOUT</a></li>
+                <li><a href="#">SERVICES</a></li>                
+                <li><a href="#">CONTACT ME</a></li>               
+            </ul>
+            <a href="#" class="btn">Hire Me</a>
+        </nav>
+
+        <div class="text-box">
+            <h1><span class="auto-input"></span></h1>
+            <p>I have a diverse of skills, ranging from design, to<br>HTML+CSS+JavaScript+Bootsrap+ASP.net, all the way to Python&SQL<p>
+            <a href="" class="btn">Contact Me</a>
+            <a href="" class="btn">Download CV</a>
+        </div>
+    </div>
+
+    <!------------About ---------------->
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="img/about.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>
+                        I am a Web Developer and a Programmer, based in Cape Town South Africa. I make<br>
+                        Web Applications, usually with VS Studio. I primarily use <b>Bootsrap</b>, but picking up<br>
+                        a new framework or languange is'nt a problem. I have extensive programming experience <br>
+                        and I'm comfortable developing on the frontend or backend as well as setting up and<br>
+                        managing the infrastucture.
+                    </p>
+                    <p>
+                        <b>Backend Development</b> -My bread and butter is <b>SQL</b>. I working on projects remotely<br>
+                         for clients in <b>Cape Town</b> and all over <b>South Africa.</b>
+                    </p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designing Web/App Interfaces</li>
+                            <li><span>Web Development</span><br>Web App Develoment</li>
+                            <li><span>App Development</span><br>Building Andriod/iOS Apps</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Damelin College</span><br>A+ International</li>
+                            <li><span>MasterGrade IT</span><br>C# Training</li>
+                            <li><span>MasterGrade IT</span><br>SQL Training</li>
+                            <li><span>Udemy</span><br>GSAP: HTML, CSS and JavaScript</li>
+                            <li><span>Udemy</span><br>Bootstrap 5</li>
+                            <li><span>Udemy</span><br>Python</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2008-2010</span><br>Techtix Corp as a Desktop Technician</li>
+                            <li><span>2010-2011</span><br>Deloitte as a SA-SAMS System Admin & Cordinater</li>
+                            <li><span>2012-2014</span><br>PRASA as a Desktop Technician</li>
+                            <li><span>2015-2017</span><br>Train Assistant/Metro Guard</li>
+                            <li><span>2017-2021</span><br>System Administrator</li>
+                            <li><span>2021-Current</span><br>Applications Specialist(Acting)</li>
+                        </ul>
+                    </div>
+                    <div class="skill">
+                        <h2>HTML</h2>
+                        <div class="progress-bar">
+                            <div class="html"><span>82%</span></div>
+                        </div>
+                        <h2>CSS</h2>
+                        <div class="progress-bar">
+                            <div class="CSS"><span>78%</span></div>
+                        </div>
+                        <h2>JavaScript</h2>
+                        <div class="progress-bar">
+                            <div class="JavaScript"><span>65%</span></div>
+                        </div>
+                        <h2>Python</h2>
+                        <div class="progress-bar">
+                            <div class="Python"><span>45%</span></div>
+                        </div>
+                        <h2>SQL</h2>
+                        <div class="progress-bar">
+                            <div class="SQL"><span>88%</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!----------------Services -------------->
+
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-brands fa-edge-legacy"></i>
+                    <h2>Web Design</h2>
+                    <p>A website helps create brand awareness and showcasing your brand
+                         to prospective customers. It helps to establish your image by 
+                         letting the audience know who you are and what you represent. 
+                         A website provides reliable information to the consumers, which 
+                         helps in setting your business apart from the competitors.</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>UI/UX</h2>
+                    <p>Increase you sales, compete with larger businesses
+                        communicate directly with your customers, simplify
+                        the buyer journey, build customer loyalty, build 
+                        your brand value, create direct marketing channel,
+                        provide a personalized experience. Let me help you.
+                    </p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>App Design</h2>
+                    <p>Let me assist you in making your product
+                        be quickly available, in a prefined workflow 
+                        on the click of a button. Simply get an App 
+                        for your business.
+                    </p>
+                    <a href="#">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!---------------------Footer----------------------->
+
+   <footer>
+        <div>
+            <div class="social">
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+            </div>
+            <p class="end">Copyright by Luthando Madlingozi</p>
+        </div>
+   </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+        var typed = new Typed(".auto-input", {
+            strings: ["Hi, I'm Luthando Madlingozi.", " I'm a Fullstack Developer.", "I design & build user interfaces.", "Based in Cape Town South Africa."],
+            typeSpeed: 100,
+            backSpeed: 100,
+            loop: true,
+        })
+    </script>
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links"); 
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+    </script>
+</body>
+</html>
