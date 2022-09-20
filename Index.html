@@ -9,7 +9,9 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;1,300;1,500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@1,400;1,700&display=swap" rel="stylesheet"> 
     <script src="https://kit.fontawesome.com/98ff9511d0.js" crossorigin="anonymous"></script>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -18,13 +20,14 @@
     <div class="hero">
         <nav>
             <h2 class="logo">Portfo<span>lio</span></h2>
-            <ul>
+            <ul id="sidemenu">
                 <li><a href="#">HOME</a></li>
                 <li><a href="#">ABOUT</a></li>
                 <li><a href="#">SERVICES</a></li>                
-                <li><a href="#">CONTACT ME</a></li>               
+                <li><a href="#">CONTACT ME</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>              
             </ul>
-            <a href="#" class="btn">Hire Me</a>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>            
         </nav>
 
         <div class="text-box">
@@ -53,7 +56,7 @@
                         managing the infrastucture.
                     </p>
                     <p>
-                        <b>Backend Development</b> -My bread and butter is <b>SQL</b>. I working on projects remotely<br>
+                        <b>Backend Development</b> -My bread and butter is <b>SQL</b>. I am working on projects remotely<br>
                          for clients in <b>Cape Town</b> and all over <b>South Africa.</b>
                     </p>
 
@@ -157,18 +160,39 @@
         </div>
     </div>
 
-    <!---------------------Footer----------------------->
+    <!----------------------Contact ME----------------------->
 
-   <footer>
-        <div>
-            <div class="social">
-                <a href="#"><i class="fab fa-instagram"></i></a>
-                <a href="#"><i class="fab fa-twitter"></i></a>
-                <a href="#"><i class="fab fa-linkedin"></i></a>
-            </div>
-            <p class="end">Copyright by Luthando Madlingozi</p>
+    <div class="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>luthando.madlingozi@kafreholdings.co.za</p>
+                    <p><i class="fa-solid fa-phone"></i>081 772 1289</p>
+                    <div class="social-icons">
+                        <a href=""><i class="fa-brands fa-facebook"></i></a>
+                        <a href=""><i class="fa-brands fa-twitter"></i></a>
+                        <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                        <a href=""><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://wa.me/0817721289"><i class="fa-brands fa-whatsapp"></i></a>
+                        
+                    </div>
+                    <a href="" class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>            
         </div>
-   </footer>
+        <div class="copyright">
+            <p>Copyright &#169 Luthando Madlingozi</p>
+        </div>
+    </div>
 
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script>
@@ -193,6 +217,19 @@
             }
             event.currentTarget.classList.add("active-link");
             document.getElementById(tabname).classList.add("active-tab");
+        }
+
+    </script>
+
+    <script>
+
+        var sidemenu = document.getElementById("sidemenu")
+
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+        function closemenu(){
+            sidemenu.style.right = "-200px";
         }
 
     </script>
