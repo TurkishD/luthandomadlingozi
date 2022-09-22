@@ -9,6 +9,11 @@
   <meta content="" name="description">
   <meta content="" name="keywords">
 
+  <!---Floating Whatsapp--->
+  <script type="text/javascript" src="jquery-3.3.1.min.js"></script>
+  <script type="text/javascript" src="floating-wpp.min.js"></script>
+  <link rel="stylesheet" href="floating-wpp.min.css">
+
   <!-- Favicons -->
   <link href="assets/img/favicon.png" rel="icon">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
@@ -276,8 +281,8 @@
 
                 <div class="journal-txt">
 
-                  <h4><a href="blog-single.html">SO LETS MAKE THE MOST IS BEAUTIFUL</a></h4>
-                  <p class="separator">To an English person, it will seem like simplified English
+                  <h4><a href="blog-single.html">SO LET ME MAKE THE MOST IS BEAUTIFUL</a></h4>
+                  <p class="separator">Change how people see your business by making the most stunning Website
                   </p>
 
                 </div>
@@ -292,8 +297,8 @@
 
                 <div class="journal-txt">
 
-                  <h4><a href="blog-single.html">WE'RE GONA MAKE DREAMS COMES</a></h4>
-                  <p class="separator">To an English person, it will seem like simplified English
+                  <h4><a href="blog-single.html">LET ME MAKE DREAMS COME THROUGH</a></h4>
+                  <p class="separator">Communicate directly with your customers, provide a personalized experience
                   </p>
 
                 </div>
@@ -309,7 +314,7 @@
                 <div class="journal-txt">
 
                   <h4><a href="blog-single.html">NEW LIFE CIVILIZATIONS TO BOLDLY</a></h4>
-                  <p class="separator">To an English person, it will seem like simplified English
+                  <p class="separator">Provide reliable information on time to your consumers, set your business apart from competitiors.
                   </p>
 
                 </div>
@@ -335,7 +340,7 @@
                 <h2 class="mb-30">GET IN TOUCH</h2>
 
                 <ul class="contact-details">
-                  <li><span>22, Parklands Main Road, Parklands</span></li>
+                  <li><span>No.22 Parklands Main Road, Parklands</span></li>
                   <li><span>Cape Town, South Africa</span></li>
                   <li><span>+27 81 772 1289</span></li>
                   <li><span>luthando.madlingozi@kafreholdings.co.za</span></li>
@@ -388,9 +393,12 @@
           </div>
         </div>
       </div>
-    </div><!-- End Contact Section -->
+    </div><!-- End Contact Section -->    
 
   </main><!-- End #main -->
+
+  <div id="myDiv"></div>  
+  
 
   <!-- ======= Footer ======= -->
   <div id="footer" class="text-center">
@@ -435,5 +443,17 @@
   <script src="assets/js/main.js"></script>
 
 </body>
+
+<script type="text/javascript">
+  $(function () {
+    $('#myDiv').floatingWhatsApp({
+      phone: '0817721289',
+      showPopup: 'True',
+      popupMessage: "Hello, how may I help you",
+      headerTitle: "WhatsApp Chat",
+      position: 'right',        
+    });
+  });
+</script>
 
 </html>
