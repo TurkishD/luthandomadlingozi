@@ -593,6 +593,12 @@ p {
   margin: 20px 0 40px;
 }
 
+@media(max-width: 992px) {
+  .tab-titles {
+    margin: 0 0 10px 0;
+  }
+}
+
 .tab-links{
   margin-left: 50px;
   font-size: 18px;
